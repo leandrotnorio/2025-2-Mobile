@@ -3,17 +3,17 @@ import 'dart:io';
 
 void main() {
 
-    List<String> alunos = [];
+    List<String?> alunos = [];
     bool cadastrarOutroAluno = true;
 
     while(cadastrarOutroAluno){
         print("informe o nome do aluno:");
         String? nome = stdin.readLineSync();
 
-        alunos.add.nome
+        alunos.add(nome);
 
         print("deseja cadastrar outro aluno()");
         var repostaUsuario = stdin.readLineSync();
-        cadastrarOutroAluno = repostaUsuario == "S"
+        cadastrarOutroAluno = repostaUsuario == "S";
     }
 }
